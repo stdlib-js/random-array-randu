@@ -18,31 +18,47 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # randu
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Create an array containing [uniformly][@stdlib/random/base/randu] distributed pseudorandom numbers between `0` and `1`.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-array-randu
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-randu@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-array-randu/tags). For example,
-
-```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-randu@v0.0.1-esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-randu@esm/index.mjs';
+var randu = require( '@stdlib/random-array-randu' );
 ```
 
 #### randu( len\[, options] )
@@ -223,14 +239,9 @@ var sz = randu.byteLength;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@esm/index.mjs';
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-randu@esm/index.mjs';
+```javascript
+var logEach = require( '@stdlib/console-log-each' );
+var randu = require( '@stdlib/random-array-randu' );
 
 // Create a function for generating random arrays originating from the same state:
 var random = randu.factory({
@@ -257,10 +268,6 @@ var x4 = random( 15 );
 
 // Print the contents:
 logEach( '%f', x4 );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -284,7 +291,7 @@ logEach( '%f', x4 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -314,8 +321,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/random-array-randu.svg
 [npm-url]: https://npmjs.org/package/@stdlib/random-array-randu
 
-[test-image]: https://github.com/stdlib-js/random-array-randu/actions/workflows/test.yml/badge.svg?branch=v0.0.1
-[test-url]: https://github.com/stdlib-js/random-array-randu/actions/workflows/test.yml?query=branch:v0.0.1
+[test-image]: https://github.com/stdlib-js/random-array-randu/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/random-array-randu/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-array-randu/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-array-randu?branch=main
@@ -344,17 +351,17 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-array-randu/main/LICENSE
 
-[@stdlib/random/base/randu]: https://github.com/stdlib-js/random-base-randu/tree/esm
+[@stdlib/random/base/randu]: https://github.com/stdlib-js/random-base-randu
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/esm
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
 
-[@stdlib/random/base/minstd]: https://github.com/stdlib-js/random-base-minstd/tree/esm
+[@stdlib/random/base/minstd]: https://github.com/stdlib-js/random-base-minstd
 
-[@stdlib/random/base/minstd-shuffle]: https://github.com/stdlib-js/random-base-minstd-shuffle/tree/esm
+[@stdlib/random/base/minstd-shuffle]: https://github.com/stdlib-js/random-base-minstd-shuffle
 
-[@stdlib/array/typed-real-float-dtypes]: https://github.com/stdlib-js/array-typed-real-float-dtypes/tree/esm
+[@stdlib/array/typed-real-float-dtypes]: https://github.com/stdlib-js/array-typed-real-float-dtypes
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/esm
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
 
 </section>
 
