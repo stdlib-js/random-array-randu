@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-randu@deno/mod.js';
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-randu@v0.2.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-randu@deno/mod.js';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-randu@v0.2.1-deno/mod.js';
 ```
 
 #### randu( len\[, options] )
@@ -231,7 +231,7 @@ var sz = randu.byteLength;
 
 ```javascript
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@deno/mod.js';
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-randu@deno/mod.js';
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-randu@v0.2.1-deno/mod.js';
 
 // Create a function for generating random arrays originating from the same state:
 var random = randu.factory({
